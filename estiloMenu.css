@@ -1,0 +1,65 @@
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+.topnav li {
+    float: left;
+    border-right: 1px solid white;
+    margin-right: 10px;
+}
+
+.topnav li:last-child {
+    border-right: none;
+    margin-right: 0;
+}
+
+.topnav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav li a:hover {
+    background-color: #111;
+}
+
+.topnav li a.active {
+    background-color: #04AA6D;
+}
+
+.topnav li.right {
+    float: right;
+}
+
+#idContenidoIndex {
+    margin: 20px 0;
+    width: 100%;
+}
+
+#idPieIndex {
+    margin: 20px 0;
+    padding: 20px;
+    width: 97%;
+    height: 180px;
+    background-image: url(../img/paisaje.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav li.right,
+    .topnav li {
+        float: none;
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        margin-right: 0;
+    }
+}
