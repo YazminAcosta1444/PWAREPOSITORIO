@@ -3,11 +3,11 @@ self.addEventListener('install', function(event) {
     caches.open('v1').then(function(cache) {
       return cache.addAll([
         '/',
-        '../css/estiloIndex.css',
-        '../css/estiloMenu.css',
+        'estiloIndex.css',
+        'estiloMenu.css',
         'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
-        '../js/ejemplo1.js',
-        '../js/listaVideos.js'
+        'ejemplo1.js',
+        'listaVideos.js'
       ]);
     })
   );
@@ -23,6 +23,6 @@ self.addEventListener('fetch', function(event) {
 
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('../PWA/service-worker.js');
+  navigator.serviceWorker.register('service-worker.js');
 }
 
