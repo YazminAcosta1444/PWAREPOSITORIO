@@ -13,7 +13,7 @@ body {
     padding: 20px;
     width: 97%;
     height: 150px;
-    background-image: url(../img/BANNER1.jpg);
+    background-image: url(BANNER1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
